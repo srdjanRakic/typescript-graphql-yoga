@@ -27,7 +27,7 @@ export const tasks: TaskData[] = [
   { id: 3, title: "Install Xcode", completed: false, projectId: 1 },
   { id: 4, title: "Morning Jog", completed: true, projectId: 2 },
   { id: 5, title: "Hit the gym", completed: false, projectId: 2 },
-  { id: 3, title: "Buy egges", completed: false, projectId: 3 },
-  { id: 3, title: "Buy chicken", completed: true, projectId: 3 },
-  { id: 3, title: "Buy BBQ sauce", completed: false, projectId: 3 },
+  { id: 6, title: "Buy egges", completed: false, projectId: 3 },
+  { id: 7, title: "Buy chicken", completed: true, projectId: 3 },
+  { id: 8, title: "Buy BBQ sauce", completed: false, projectId: 3 },
 ];
