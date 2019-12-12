@@ -7,7 +7,7 @@ import {
   Root,
 } from "type-graphql";
 import { projects, TaskData, tasks } from "../data";
-import Task from "../schemas/Task";
+import Task from "../entities/Task";
 
 @Resolver(() => Task)
 export default class {

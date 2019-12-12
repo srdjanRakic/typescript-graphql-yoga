@@ -1,6 +1,6 @@
 import { Arg, FieldResolver, Query, Resolver, Root } from "type-graphql";
 import { projects, tasks, ProjectData } from "../data";
-import Project from "../schemas/Project";
+import Project from "../entities/Project";
 
 @Resolver(() => Project)
 export default class {
