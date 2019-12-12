@@ -43,7 +43,7 @@ export default class {
   @FieldResolver()
   project(@Root() taskData: TaskData) {
     return projects.find(project => {
-      return project.id === taskData.project_id;
+      return project.id === taskData.projectId;
     });
   }
 }

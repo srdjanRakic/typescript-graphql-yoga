@@ -12,7 +12,7 @@ export default class {
   @FieldResolver()
   tasks(@Root() projectData: ProjectData) {
     return tasks.filter(task => {
-      return task.project_id === projectData.id;
+      return task.projectId === projectData.id;
     });
   }
 }
