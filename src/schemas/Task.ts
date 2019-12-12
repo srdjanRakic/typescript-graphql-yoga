@@ -3,13 +3,13 @@ import Project from "./Project";
 
 @ObjectType()
 export default class Task {
-  @Field(type => Int)
+  @Field(() => Int)
   id: number;
 
   @Field()
   title: string;
 
-  @Field(type => Project)
+  @Field(() => Project)
   project: Project;
 
   @Field()

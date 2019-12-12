@@ -3,12 +3,12 @@ import Task from "./Task";
 
 @ObjectType()
 export default class Project {
-  @Field(type => Int)
+  @Field(() => Int)
   id: number;
 
   @Field()
   name: string;
 
-  @Field(type => [Task])
+  @Field(() => [Task])
   tasks: Task[];
 }

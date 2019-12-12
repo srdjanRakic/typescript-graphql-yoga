@@ -9,19 +9,19 @@ import {
 import { projects, TaskData, tasks } from "../data";
 import Task from "../schemas/Task";
 
-@Resolver(of => Task)
+@Resolver(() => Task)
 export default class {
-  @Query(returns => [Task])
+  @Query(() => [Task])
   fetchTasks(): TaskData[] {
     return tasks;
   }
 
-  @Query(returns => Task, { nullable: true })
+  @Query(() => Task, { nullable: true })
   getTask(@Arg("id") id: number): TaskData | undefined {
     return tasks.find(task => task.id === id);
   }
 
-  @Mutation(returns => Task)
+  @Mutation(() => Task)
   markAsCompleted(@Arg("taskId") taskId: number): TaskData {
     const task = tasks.find(task => {
       return task.id === taskId;
