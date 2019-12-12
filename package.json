@@ -1,11 +1,8 @@
 {
   "name": "graphql-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "ToDO GrapQL Demo App",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon --exec ts-node src/index.ts"
-  },
   "keywords": [
     "typescript",
     "graphql",
@@ -13,6 +10,9 @@
   ],
   "author": "Srdjan Rakic",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec ts-node src/index.ts"
+  },
   "dependencies": {
     "graphql": "^14.5.8",
     "graphql-yoga": "^1.18.3",
